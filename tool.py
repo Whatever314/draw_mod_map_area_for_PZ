@@ -190,6 +190,7 @@ if __name__ == "__main__":
     width_in_cell = 66
     height_in_cell = 53
     current_dir = path.dirname(sys.argv[0])
+    if not path.isdir(path.join(current_dir, "output")): os.mkdir(path.join(current_dir, "output"))
     map = Image.new("RGBA", (width_in_cell*cell_width, height_in_cell*cell_width))
     for i in range(2):
         for j in range(2):
