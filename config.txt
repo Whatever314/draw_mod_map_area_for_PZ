@@ -1,0 +1,2 @@
+game_directory=D:\SteamLibrary\steamapps\common\ProjectZomboid
+save_directory=
