@@ -72,8 +72,9 @@ def get_maps_dict(save_path, all_modmaps_dict):
     with open(path.join(save_path, "mods.txt"), encoding="utf-8") as f:
         for line in f.readlines():
             line = line.strip()
-            if len(line) > 6 and line[:6] == 'mod = ' and line[6:-1] in lst:
-                id = line[6:-1]
+            if len(line) > 6 and line[:6] == 'mod = ':
+                if line[-1] == ',': line = line[:-1]
+                id = line[6:]
                 res_dic[id] = all_modmaps_dict[id]
                 lst.remove(id)
     return res_dic
