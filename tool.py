@@ -75,8 +75,9 @@ def get_maps_dict(save_path, all_modmaps_dict):
             if len(line) > 6 and line[:6] == 'mod = ':
                 if line[-1] == ',': line = line[:-1]
                 id = line[6:]
-                res_dic[id] = all_modmaps_dict[id]
-                lst.remove(id)
+                if id in lst:
+                    res_dic[id] = all_modmaps_dict[id]
+                    lst.remove(id)
     return res_dic
 
 def draw_one_cell(loc, cell_width, color, draw_obj):
