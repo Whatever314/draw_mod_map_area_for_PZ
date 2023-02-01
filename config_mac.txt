@@ -1,0 +1,2 @@
+game_directory=/Users/*UserNameHere*/Library/Application Support/Steam/steamapps/common/ProjectZomboid
+save_directory=/Users/*UserNameHere*/Zomboid/Saves/Sandbox/*SaveNameHere*
