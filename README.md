@@ -59,8 +59,7 @@
     1. 默认游戏路径已经在`game_directory=`中填好。修改**UserNameHere**（包括前后`*`号）为自己系统名。
     2. 默认存档路径已经在`save_directory=`中填好。修改**UserNameHere**（包括前后`*`号）为自己系统名。修改**SaveNameHere**(包括前后`*`号)为自己存档的名字。
 
-
-2. 运行`run.bat`。对于MacOS用户请运行`run.sh`。请等候若干分钟，运行结束后会在`output`文件夹生成如下命名的两个图片：
+2. 运行`run.bat`。对于MacOS用户请从终端进入该目录，从终端中运行`bash run.sh`。请等候若干分钟，运行结束后会在`output`文件夹生成如下命名的两个图片：
 
     1. `存档名.png`为地图模组所在区域的指示图。
     2. `legends_存档名.png`指示每个颜色所代表的模组。
